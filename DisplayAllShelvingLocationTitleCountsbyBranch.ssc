@@ -1,0 +1,7 @@
+SELECT COUNT([OCLC Number]), [LHR Item Branch Name], [Material Format], [Material Subformat], [LHR Item Permanent Shelving Location]
+FROM (SELECT DISTINCT([OCLC Number]), [LHR Item Branch Name], [Material Format], [Material Subformat],[LHR Item Permanent Shelving Location] 
+
+FROM dbo_acrl2020)
+WHERE [LHR Item Branch Name] Not In ('N/A','')
+GROUP BY [LHR Item Branch Name], [Material Format], [Material Subformat], [LHR Item Permanent Shelving Location]
+ORDER BY [LHR Item Branch Name], [Material Format], [Material Subformat], [LHR Item Permanent Shelving Location];

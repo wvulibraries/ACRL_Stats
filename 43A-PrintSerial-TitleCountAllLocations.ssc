@@ -1,0 +1,91 @@
+SELECT COUNT([OCLC Number]), [Institution Symbol]
+FROM
+(SELECT DISTINCT(dbo_acrl2020.[OCLC Number]), [Institution Symbol]      
+FROM dbo_acrl2020       
+WHERE     
+((dbo_acrl2020.[Institution Symbol]) In ('WVU'))  
+And      
+ 
+((((dbo_acrl2020.[Material Format]) In ('JOURNALS/MAGAZINES','NEWSPAPERS')) And ((dbo_acrl2020.[LHR Item Permanent Shelving Location]) Not In ('Microfiche', 'Microfilm', 'Government Documents Microfiche', 'Government Documents Microfilm', 'Microcard', 'Government Documents Media', 'Media Services Equipment 1 Day', 'Media Services Equipment 7 Day', 'Laptops', 'Access Services Desk - Audio Cassette', 'Access Services Desk - Audio Compact Disc', 'Access Services Desk - Compact Disc', 'Tech Equipment 8 hour', 'DVD', 'DVDS', 'Audiovisuals', 'CD-ROM', 'Media','Microphotography'))) 
+ 
+Or    
+ 
+(((dbo_acrl2020.[Material Subformat]) Like 'CONTINUALLYUPDATEDRESOURCES') And ((dbo_acrl2020.[LHR Item Permanent Shelving Location]) Not In ('Microfiche', 'Microfilm', 'Government Documents Microfiche', 'Government Documents Microfilm', 'Microcard', 'Government Documents Media', 'Media Services Equipment 1 Day', 'Media Services Equipment 7 Day', 'Laptops', 'Access Services Desk - Audio Cassette', 'Access Services Desk - Audio Compact Disc', 'Access Services Desk - Compact Disc', 'Tech Equipment 8 hour', 'DVD', 'DVDS', 'Audiovisuals', 'CD-ROM', 'Media','Microphotography'))) 
+ 
+Or 
+ 
+((dbo_acrl2020.[LHR Item Permanent Shelving Location]) In ('Periodicals'))
+ 
+))
+
+GROUP BY [Institution Symbol]
+UNION
+SELECT COUNT([OCLC Number]), [Institution Symbol]
+FROM
+(SELECT DISTINCT(dbo_acrl2020.[OCLC Number]), [Institution Symbol]      
+FROM dbo_acrl2020       
+WHERE     
+((dbo_acrl2020.[Institution Symbol]) In ('WVT'))  
+ 
+And      
+ 
+((((dbo_acrl2020.[Material Format]) In ('JOURNALS/MAGAZINES','NEWSPAPERS')) And ((dbo_acrl2020.[LHR Item Permanent Shelving Location]) Not In ('Microfiche', 'Microfilm', 'Government Documents Microfiche', 'Government Documents Microfilm', 'Microcard', 'Government Documents Media', 'Media Services Equipment 1 Day', 'Media Services Equipment 7 Day', 'Laptops', 'Access Services Desk - Audio Cassette', 'Access Services Desk - Audio Compact Disc', 'Access Services Desk - Compact Disc', 'Tech Equipment 8 hour', 'DVD', 'DVDS', 'Audiovisuals', 'CD-ROM', 'Media','Microphotography'))) 
+ 
+Or    
+ 
+(((dbo_acrl2020.[Material Subformat]) Like 'CONTINUALLYUPDATEDRESOURCES') And ((dbo_acrl2020.[LHR Item Permanent Shelving Location]) Not In ('Microfiche', 'Microfilm', 'Government Documents Microfiche', 'Government Documents Microfilm', 'Microcard', 'Government Documents Media', 'Media Services Equipment 1 Day', 'Media Services Equipment 7 Day', 'Laptops', 'Access Services Desk - Audio Cassette', 'Access Services Desk - Audio Compact Disc', 'Access Services Desk - Compact Disc', 'Tech Equipment 8 hour', 'DVD', 'DVDS', 'Audiovisuals', 'CD-ROM', 'Media','Microphotography'))) 
+ 
+Or 
+ 
+((dbo_acrl2020.[LHR Item Permanent Shelving Location]) In ('Periodicals'))
+ 
+))
+
+GROUP BY [Institution Symbol]
+UNION
+SELECT COUNT([OCLC Number]), [Institution Symbol]
+FROM
+(SELECT DISTINCT(dbo_acrl2020.[OCLC Number]), [Institution Symbol]      
+FROM dbo_acrl2020       
+WHERE     
+((dbo_acrl2020.[Institution Symbol]) In ('PWS'))  
+ 
+And      
+ 
+((((dbo_acrl2020.[Material Format]) In ('JOURNALS/MAGAZINES','NEWSPAPERS')) And ((dbo_acrl2020.[LHR Item Permanent Shelving Location]) Not In ('Microfiche', 'Microfilm', 'Government Documents Microfiche', 'Government Documents Microfilm', 'Microcard', 'Government Documents Media', 'Media Services Equipment 1 Day', 'Media Services Equipment 7 Day', 'Laptops', 'Access Services Desk - Audio Cassette', 'Access Services Desk - Audio Compact Disc', 'Access Services Desk - Compact Disc', 'Tech Equipment 8 hour', 'DVD', 'DVDS', 'Audiovisuals', 'CD-ROM', 'Media','Microphotography'))) 
+ 
+Or    
+ 
+(((dbo_acrl2020.[Material Subformat]) Like 'CONTINUALLYUPDATEDRESOURCES') And ((dbo_acrl2020.[LHR Item Permanent Shelving Location]) Not In ('Microfiche', 'Microfilm', 'Government Documents Microfiche', 'Government Documents Microfilm', 'Microcard', 'Government Documents Media', 'Media Services Equipment 1 Day', 'Media Services Equipment 7 Day', 'Laptops', 'Access Services Desk - Audio Cassette', 'Access Services Desk - Audio Compact Disc', 'Access Services Desk - Compact Disc', 'Tech Equipment 8 hour', 'DVD', 'DVDS', 'Audiovisuals', 'CD-ROM', 'Media','Microphotography'))) 
+ 
+Or 
+ 
+((dbo_acrl2020.[LHR Item Permanent Shelving Location]) In ('Periodicals'))
+ 
+))
+
+GROUP BY [Institution Symbol]
+UNION
+SELECT COUNT([OCLC Number]), [Institution Symbol]
+FROM
+(SELECT DISTINCT(dbo_acrl2020.[OCLC Number]), [Institution Symbol]      
+FROM dbo_acrl2020       
+WHERE     
+((dbo_acrl2020.[Institution Symbol]) In ('WVUHS'))  
+ 
+And      
+ 
+((((dbo_acrl2020.[Material Format]) In ('JOURNALS/MAGAZINES','NEWSPAPERS')) And ((dbo_acrl2020.[LHR Item Permanent Shelving Location]) Not In ('Microfiche', 'Microfilm', 'Government Documents Microfiche', 'Government Documents Microfilm', 'Microcard', 'Government Documents Media', 'Media Services Equipment 1 Day', 'Media Services Equipment 7 Day', 'Laptops', 'Access Services Desk - Audio Cassette', 'Access Services Desk - Audio Compact Disc', 'Access Services Desk - Compact Disc', 'Tech Equipment 8 hour', 'DVD', 'DVDS', 'Audiovisuals', 'CD-ROM', 'Media','Microphotography'))) 
+ 
+Or    
+ 
+(((dbo_acrl2020.[Material Subformat]) Like 'CONTINUALLYUPDATEDRESOURCES') And ((dbo_acrl2020.[LHR Item Permanent Shelving Location]) Not In ('Microfiche', 'Microfilm', 'Government Documents Microfiche', 'Government Documents Microfilm', 'Microcard', 'Government Documents Media', 'Media Services Equipment 1 Day', 'Media Services Equipment 7 Day', 'Laptops', 'Access Services Desk - Audio Cassette', 'Access Services Desk - Audio Compact Disc', 'Access Services Desk - Compact Disc', 'Tech Equipment 8 hour', 'DVD', 'DVDS', 'Audiovisuals', 'CD-ROM', 'Media','Microphotography'))) 
+ 
+Or 
+ 
+((dbo_acrl2020.[LHR Item Permanent Shelving Location]) In ('Periodicals'))
+ 
+))
+
+GROUP BY [Institution Symbol];
+

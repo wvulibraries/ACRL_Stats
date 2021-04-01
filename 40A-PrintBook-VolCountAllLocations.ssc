@@ -1,0 +1,51 @@
+
+SELECT Count(dbo_acrl2020.[OCLC Number]), [Institution Symbol]
+FROM dbo_acrl2020       
+WHERE     
+((dbo_acrl2020.[Institution Symbol]) In ('WVU'))      
+And      
+( 
+(((dbo_acrl2020.[Material Format]) In ('BOOKS','ARCHIVALMATERIALS','MUSICALSCORE','N/A')) And     
+(((dbo_acrl2020.[Material Subformat]) Not In ('BOOKS:MICROFORM','CONTINUALLYUPDATEDRESOURCES')) And     
+(((dbo_acrl2020.[LHR Item Permanent Shelving Location]) Not In ('Microfiche', 'Microfilm', 'Media Services Equipment 1 Day', 'Government Documents Media', 'Government Documents Microfiche', 'Government Documents Microfilm', 'Media Services Equipment 7 Day', 'Laptops', 'Microcard', 'Access Services Desk - Audio Compact Disc', 'Access Services Desk - Compact Disc', 'Tech Equipment 8 hour', 'DVD', 'Access Services Desk - Audio Cassette', 'Audiovisuals', 'CD-ROM', 'DVDS', 'Media','Periodicals', 'Microphotography'))
+))))
+GROUP BY [Institution Symbol]
+UNION
+SELECT Count(dbo_acrl2020.[OCLC Number]),[Institution Symbol]
+FROM dbo_acrl2020       
+WHERE     
+((dbo_acrl2020.[Institution Symbol]) In ('WVT'))      
+And      
+( 
+(((dbo_acrl2020.[Material Format]) In ('BOOKS','ARCHIVALMATERIALS','MUSICALSCORE','N/A')) And     
+(((dbo_acrl2020.[Material Subformat]) Not In ('BOOKS:MICROFORM','CONTINUALLYUPDATEDRESOURCES')) And     
+(((dbo_acrl2020.[LHR Item Permanent Shelving Location]) Not In ('Microfiche', 'Microfilm', 'Media Services Equipment 1 Day', 'Government Documents Media', 'Government Documents Microfiche', 'Government Documents Microfilm', 'Media Services Equipment 7 Day', 'Laptops', 'Microcard', 'Access Services Desk - Audio Compact Disc', 'Access Services Desk - Compact Disc', 'Tech Equipment 8 hour', 'DVD', 'Access Services Desk - Audio Cassette', 'Audiovisuals', 'CD-ROM', 'DVDS', 'Media','Periodicals', 'Microphotography'))
+))))
+GROUP BY [Institution Symbol]
+UNION
+SELECT Count(dbo_acrl2020.[OCLC Number]), [Institution Symbol]
+FROM dbo_acrl2020       
+WHERE     
+((dbo_acrl2020.[Institution Symbol]) In ('PWS'))      
+And      
+( 
+(((dbo_acrl2020.[Material Format]) In ('BOOKS','ARCHIVALMATERIALS','MUSICALSCORE','N/A')) And     
+(((dbo_acrl2020.[Material Subformat]) Not In ('BOOKS:MICROFORM','CONTINUALLYUPDATEDRESOURCES')) And     
+(((dbo_acrl2020.[LHR Item Permanent Shelving Location]) Not In ('Microfiche', 'Microfilm', 'Media Services Equipment 1 Day', 'Government Documents Media', 'Government Documents Microfiche', 'Government Documents Microfilm', 'Media Services Equipment 7 Day', 'Laptops', 'Microcard', 'Access Services Desk - Audio Compact Disc', 'Access Services Desk - Compact Disc', 'Tech Equipment 8 hour', 'DVD', 'Access Services Desk - Audio Cassette', 'Audiovisuals', 'CD-ROM', 'DVDS', 'Media','Periodicals', 'Microphotography'))
+))))
+GROUP BY [Institution Symbol];
+UNION
+SELECT Count(dbo_acrl2020.[OCLC Number]), [Institution Symbol]
+FROM dbo_acrl2020       
+WHERE     
+((dbo_acrl2020.[Institution Symbol]) In ('WVUHS'))      
+And      
+( 
+(((dbo_acrl2020.[Material Format]) In ('BOOKS','ARCHIVALMATERIALS','MUSICALSCORE','N/A')) And     
+(((dbo_acrl2020.[Material Subformat]) Not In ('BOOKS:MICROFORM','CONTINUALLYUPDATEDRESOURCES')) And     
+(((dbo_acrl2020.[LHR Item Permanent Shelving Location]) Not In ('Microfiche', 'Microfilm', 'Media Services Equipment 1 Day', 'Government Documents Media', 'Government Documents Microfiche', 'Government Documents Microfilm', 'Media Services Equipment 7 Day', 'Laptops', 'Microcard', 'Access Services Desk - Audio Compact Disc', 'Access Services Desk - Compact Disc', 'Tech Equipment 8 hour', 'DVD', 'Access Services Desk - Audio Cassette', 'Audiovisuals', 'CD-ROM', 'DVDS', 'Media','Periodicals', 'Microphotography'))
+))))
+GROUP BY [Institution Symbol];
+
+
+

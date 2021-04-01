@@ -1,0 +1,5 @@
+SELECT [LHR Item Branch Name], [Material Format], [Material Subformat], [LHR Item Permanent Shelving Location], Count([LHR Item Barcode])
+FROM dbo_acrl2020
+WHERE [LHR Item Branch Name] Not In ('N/A','')
+GROUP BY [LHR Item Branch Name], [Material Format], [Material Subformat], [LHR Item Permanent Shelving Location]
+ORDER BY [LHR Item Branch Name], [Material Format], [Material Subformat], [LHR Item Permanent Shelving Location];
